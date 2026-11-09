@@ -1,0 +1,111 @@
+{
+  "n_cases": 324,
+  "hard_precision": 1.0,
+  "hard_recall": 1.0,
+  "hard_f1": 1.0,
+  "hard_tp": 108,
+  "hard_fp": 0,
+  "hard_fn": 0,
+  "hard_tn": 27,
+  "naming_detection": 1.0,
+  "cross_build_detection": 1.0,
+  "fasta_build_acc_all": 1.0,
+  "by_fault": [
+    {
+      "fault": "clean",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 0.0,
+      "frac_warning": 0.0
+    },
+    {
+      "fault": "wrong_build_gtf",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 1.0,
+      "frac_warning": 0.0
+    },
+    {
+      "fault": "wrong_build_vcf",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 1.0,
+      "frac_warning": 0.0
+    },
+    {
+      "fault": "naming_mismatch",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 1.0,
+      "frac_warning": 0.0
+    },
+    {
+      "fault": "ncbi_vs_ucsc",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 1.0,
+      "frac_warning": 0.0
+    },
+    {
+      "fault": "missing_vcf_lengths",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 0.0,
+      "frac_warning": 1.0
+    },
+    {
+      "fault": "mt_flavor_swap",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 0.0,
+      "frac_warning": 1.0
+    },
+    {
+      "fault": "coord_oob",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 0.0,
+      "frac_warning": 1.0
+    },
+    {
+      "fault": "alt_in_fasta_only",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 0.0,
+      "frac_warning": 1.0
+    },
+    {
+      "fault": "header_lie",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 0.0,
+      "frac_warning": 0.0
+    },
+    {
+      "fault": "mixed_names_in_gtf",
+      "n": 27,
+      "detection_rate": 1.0,
+      "fasta_build_acc": 1.0,
+      "frac_error": 0.0,
+      "frac_warning": 1.0
+    },
+    {
+      "fault": "shifted_gtf",
+      "n": 27,
+      "detection_rate": 0.667,
+      "fasta_build_acc": 1.0,
+      "frac_error": 0.222,
+      "frac_warning": 0.444
+    }
+  ]
+}

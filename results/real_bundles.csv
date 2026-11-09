@@ -1,0 +1,25 @@
+fasta,gtf,vcf,gtf_header,fasta_call,gtf_call,vcf_call,severity,expected,correct,codes
+hg19,hg19,hg38,kept,hg19,hg19,hg38,error,error,True,BUILD_MISMATCH|FILE_WARNING
+hg19,hg19,hg38,stripped,hg19,hg19,hg38,error,error,True,BUILD_MISMATCH|FILE_WARNING
+hg19,hg19,-,kept,hg19,hg19,-,warning,no error,True,FILE_WARNING
+hg19,hg19,-,stripped,hg19,hg19,-,warning,no error,True,FILE_WARNING
+hg19,hg38,hg38,kept,hg19,hg38,hg38,error,error,True,BUILD_MISMATCH|FILE_WARNING
+hg19,hg38,hg38,stripped,hg19,hg38,hg38,error,error,True,BUILD_MISMATCH|FILE_WARNING
+hg19,hg38,-,kept,hg19,hg38,-,error,error,True,BUILD_MISMATCH|FILE_WARNING
+hg19,hg38,-,stripped,hg19,hg38,-,error,error,True,BUILD_MISMATCH|FILE_WARNING
+hg38,hg19,hg38,kept,hg38,hg19,hg38,error,error,True,BUILD_MISMATCH|FILE_WARNING
+hg38,hg19,hg38,stripped,hg38,hg19,hg38,error,error,True,BUILD_MISMATCH|FILE_WARNING
+hg38,hg19,-,kept,hg38,hg19,-,error,error,True,BUILD_MISMATCH|FILE_WARNING
+hg38,hg19,-,stripped,hg38,hg19,-,error,error,True,BUILD_MISMATCH|FILE_WARNING
+hg38,hg38,hg38,kept,hg38,hg38,hg38,warning,no error,True,FILE_WARNING
+hg38,hg38,hg38,stripped,hg38,hg38,hg38,warning,no error,True,FILE_WARNING
+hg38,hg38,-,kept,hg38,hg38,-,warning,no error,True,FILE_WARNING
+hg38,hg38,-,stripped,hg38,hg38,-,warning,no error,True,FILE_WARNING
+t2t,hg19,hg38,kept,t2t,hg19,hg38,error,error,True,BUILD_MISMATCH
+t2t,hg19,hg38,stripped,t2t,hg19,hg38,error,error,True,BUILD_MISMATCH
+t2t,hg19,-,kept,t2t,hg19,-,error,error,True,BUILD_MISMATCH
+t2t,hg19,-,stripped,t2t,hg19,-,error,error,True,BUILD_MISMATCH
+t2t,hg38,hg38,kept,t2t,hg38,hg38,error,error,True,BUILD_MISMATCH
+t2t,hg38,hg38,stripped,t2t,hg38,hg38,error,error,True,BUILD_MISMATCH
+t2t,hg38,-,kept,t2t,hg38,-,error,error,True,BUILD_MISMATCH
+t2t,hg38,-,stripped,t2t,hg38,-,error,error,True,BUILD_MISMATCH

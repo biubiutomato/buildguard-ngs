@@ -1,0 +1,12 @@
+##description: evidence-based annotation of the human genome (GRCh38), version 44 (Ensembl 110)
+##provider: GENCODE
+##contact: gencode-help@ebi.ac.uk
+##format: gtf
+##date: 2023-03-01
+chr7	HAVANA	gene	55019017	55211628	.	+	.	gene_id "ENSG00000146648.21"; gene_type "protein_coding"; gene_name "EGFR"; level 1; hgnc_id "HGNC:3236"; havana_gene "OTTHUMG00000023661.5";
+chr8	HAVANA	gene	127735434	127742951	.	+	.	gene_id "ENSG00000136997.22"; gene_type "protein_coding"; gene_name "MYC"; level 1; hgnc_id "HGNC:7553"; havana_gene "OTTHUMG00000128475.10";
+chr10	HAVANA	gene	87862638	87971930	.	+	.	gene_id "ENSG00000171862.15"; gene_type "protein_coding"; gene_name "PTEN"; level 2; hgnc_id "HGNC:9588"; tag "overlapping_locus"; tag "reference_genome_error"; havana_gene "OTTHUMG00000018686.1";
+chr12	HAVANA	gene	25205246	25250936	.	-	.	gene_id "ENSG00000133703.14"; gene_type "protein_coding"; gene_name "KRAS"; level 2; hgnc_id "HGNC:6407"; havana_gene "OTTHUMG00000171193.4";
+chr13	HAVANA	gene	32315086	32400268	.	+	.	gene_id "ENSG00000139618.18"; gene_type "protein_coding"; gene_name "BRCA2"; level 2; hgnc_id "HGNC:1101"; tag "overlapping_locus"; havana_gene "OTTHUMG00000017411.8";
+chr17	HAVANA	gene	7661779	7687538	.	-	.	gene_id "ENSG00000141510.18"; gene_type "protein_coding"; gene_name "TP53"; level 2; hgnc_id "HGNC:11998"; tag "overlapping_locus"; havana_gene "OTTHUMG00000162125.10";
+chr17	HAVANA	gene	43044295	43170245	.	-	.	gene_id "ENSG00000012048.25"; gene_type "protein_coding"; gene_name "BRCA1"; level 2; hgnc_id "HGNC:1100"; tag "overlapping_locus"; havana_gene "OTTHUMG00000157426.16";

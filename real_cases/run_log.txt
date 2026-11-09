@@ -1,0 +1,25 @@
+hg19  hg19  hg38  kept     -> fasta=hg19 gtf=hg19 vcf=hg38 error   expected=error    OK BUILD_MISMATCH|FILE_WARNING
+hg19  hg19  hg38  stripped -> fasta=hg19 gtf=hg19 vcf=hg38 error   expected=error    OK BUILD_MISMATCH|FILE_WARNING
+hg19  hg19  -     kept     -> fasta=hg19 gtf=hg19 vcf=- warning expected=no error OK FILE_WARNING
+hg19  hg19  -     stripped -> fasta=hg19 gtf=hg19 vcf=- warning expected=no error OK FILE_WARNING
+hg19  hg38  hg38  kept     -> fasta=hg19 gtf=hg38 vcf=hg38 error   expected=error    OK BUILD_MISMATCH|FILE_WARNING
+hg19  hg38  hg38  stripped -> fasta=hg19 gtf=hg38 vcf=hg38 error   expected=error    OK BUILD_MISMATCH|FILE_WARNING
+hg19  hg38  -     kept     -> fasta=hg19 gtf=hg38 vcf=- error   expected=error    OK BUILD_MISMATCH|FILE_WARNING
+hg19  hg38  -     stripped -> fasta=hg19 gtf=hg38 vcf=- error   expected=error    OK BUILD_MISMATCH|FILE_WARNING
+hg38  hg19  hg38  kept     -> fasta=hg38 gtf=hg19 vcf=hg38 error   expected=error    OK BUILD_MISMATCH|FILE_WARNING
+hg38  hg19  hg38  stripped -> fasta=hg38 gtf=hg19 vcf=hg38 error   expected=error    OK BUILD_MISMATCH|FILE_WARNING
+hg38  hg19  -     kept     -> fasta=hg38 gtf=hg19 vcf=- error   expected=error    OK BUILD_MISMATCH|FILE_WARNING
+hg38  hg19  -     stripped -> fasta=hg38 gtf=hg19 vcf=- error   expected=error    OK BUILD_MISMATCH|FILE_WARNING
+hg38  hg38  hg38  kept     -> fasta=hg38 gtf=hg38 vcf=hg38 warning expected=no error OK FILE_WARNING
+hg38  hg38  hg38  stripped -> fasta=hg38 gtf=hg38 vcf=hg38 warning expected=no error OK FILE_WARNING
+hg38  hg38  -     kept     -> fasta=hg38 gtf=hg38 vcf=- warning expected=no error OK FILE_WARNING
+hg38  hg38  -     stripped -> fasta=hg38 gtf=hg38 vcf=- warning expected=no error OK FILE_WARNING
+t2t   hg19  hg38  kept     -> fasta=t2t gtf=hg19 vcf=hg38 error   expected=error    OK BUILD_MISMATCH
+t2t   hg19  hg38  stripped -> fasta=t2t gtf=hg19 vcf=hg38 error   expected=error    OK BUILD_MISMATCH
+t2t   hg19  -     kept     -> fasta=t2t gtf=hg19 vcf=- error   expected=error    OK BUILD_MISMATCH
+t2t   hg19  -     stripped -> fasta=t2t gtf=hg19 vcf=- error   expected=error    OK BUILD_MISMATCH
+t2t   hg38  hg38  kept     -> fasta=t2t gtf=hg38 vcf=hg38 error   expected=error    OK BUILD_MISMATCH
+t2t   hg38  hg38  stripped -> fasta=t2t gtf=hg38 vcf=hg38 error   expected=error    OK BUILD_MISMATCH
+t2t   hg38  -     kept     -> fasta=t2t gtf=hg38 vcf=- error   expected=error    OK BUILD_MISMATCH
+t2t   hg38  -     stripped -> fasta=t2t gtf=hg38 vcf=- error   expected=error    OK BUILD_MISMATCH
+correct: 24/24

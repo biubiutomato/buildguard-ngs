@@ -1,0 +1,325 @@
+id,true_build,true_style,fault,is_mismatch,hard,pred_build,fasta_build,severity,codes,detected,build_ok,n_issues,issues
+1,hg19,ucsc,clean,False,True,hg19,hg19,ok,,1,1,0,
+2,hg19,ucsc,clean,False,True,hg19,hg19,ok,,1,1,0,
+3,hg19,ucsc,clean,False,True,hg19,hg19,ok,,1,1,0,
+4,hg19,ucsc,wrong_build_gtf,True,True,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg38, fasta:hg19, vcf:hg19"
+5,hg19,ucsc,wrong_build_gtf,True,True,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg38, fasta:hg19, vcf:hg19"
+6,hg19,ucsc,wrong_build_gtf,True,True,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg38, fasta:hg19, vcf:hg19"
+7,hg19,ucsc,wrong_build_vcf,True,True,hg19,hg19,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg19, fasta:hg19, vcf:t2t; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+8,hg19,ucsc,wrong_build_vcf,True,True,hg19,hg19,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg19, fasta:hg19, vcf:t2t; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+9,hg19,ucsc,wrong_build_vcf,True,True,hg19,hg19,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg19, fasta:hg19, vcf:t2t; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+10,hg19,ucsc,naming_mismatch,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ensembl, fasta:ucsc, vcf:ucsc"
+11,hg19,ucsc,naming_mismatch,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ensembl, fasta:ucsc, vcf:ucsc"
+12,hg19,ucsc,naming_mismatch,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ensembl, fasta:ucsc, vcf:ucsc"
+13,hg19,ucsc,ncbi_vs_ucsc,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+14,hg19,ucsc,ncbi_vs_ucsc,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+15,hg19,ucsc,ncbi_vs_ucsc,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+16,hg19,ucsc,missing_vcf_lengths,False,False,hg19,hg19,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+17,hg19,ucsc,missing_vcf_lengths,False,False,hg19,hg19,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+18,hg19,ucsc,missing_vcf_lengths,False,False,hg19,hg19,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+19,hg19,ucsc,mt_flavor_swap,True,False,hg19,hg19,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16569 (rCRS) with an hg19 nuclear build — common but inconsistent"
+20,hg19,ucsc,mt_flavor_swap,True,False,hg19,hg19,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16569 (rCRS) with an hg19 nuclear build — common but inconsistent"
+21,hg19,ucsc,mt_flavor_swap,True,False,hg19,hg19,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16569 (rCRS) with an hg19 nuclear build — common but inconsistent"
+22,hg19,ucsc,coord_oob,True,False,hg19,hg19,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg19 contig length; vcf: 1 coordinate(s) exceed hg19 contig length
+23,hg19,ucsc,coord_oob,True,False,hg19,hg19,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg19 contig length; vcf: 1 coordinate(s) exceed hg19 contig length
+24,hg19,ucsc,coord_oob,True,False,hg19,hg19,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg19 contig length; vcf: 1 coordinate(s) exceed hg19 contig length
+25,hg19,ucsc,alt_in_fasta_only,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+26,hg19,ucsc,alt_in_fasta_only,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+27,hg19,ucsc,alt_in_fasta_only,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+28,hg38,ucsc,header_lie,False,False,hg38,hg38,ok,,1,1,0,
+29,hg38,ucsc,header_lie,False,False,hg38,hg38,ok,,1,1,0,
+30,hg38,ucsc,header_lie,False,False,hg38,hg38,ok,,1,1,0,
+31,hg19,ucsc,mixed_names_in_gtf,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+32,hg19,ucsc,mixed_names_in_gtf,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+33,hg19,ucsc,mixed_names_in_gtf,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+34,hg19,ucsc,shifted_gtf,True,False,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg19, vcf:hg19"
+35,hg19,ucsc,shifted_gtf,True,False,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg19, vcf:hg19"
+36,hg19,ucsc,shifted_gtf,True,False,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg19, vcf:hg19"
+37,hg19,ensembl,clean,False,True,hg19,hg19,ok,,1,1,0,
+38,hg19,ensembl,clean,False,True,hg19,hg19,ok,,1,1,0,
+39,hg19,ensembl,clean,False,True,hg19,hg19,ok,,1,1,0,
+40,hg19,ensembl,wrong_build_gtf,True,True,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg38, fasta:hg19, vcf:hg19"
+41,hg19,ensembl,wrong_build_gtf,True,True,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg38, fasta:hg19, vcf:hg19"
+42,hg19,ensembl,wrong_build_gtf,True,True,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg38, fasta:hg19, vcf:hg19"
+43,hg19,ensembl,wrong_build_vcf,True,True,hg19,hg19,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg19, fasta:hg19, vcf:t2t; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+44,hg19,ensembl,wrong_build_vcf,True,True,hg19,hg19,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg19, fasta:hg19, vcf:t2t; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+45,hg19,ensembl,wrong_build_vcf,True,True,hg19,hg19,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg19, fasta:hg19, vcf:t2t; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+46,hg19,ensembl,naming_mismatch,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ensembl, vcf:ensembl"
+47,hg19,ensembl,naming_mismatch,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ensembl, vcf:ensembl"
+48,hg19,ensembl,naming_mismatch,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ensembl, vcf:ensembl"
+49,hg19,ensembl,ncbi_vs_ucsc,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+50,hg19,ensembl,ncbi_vs_ucsc,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+51,hg19,ensembl,ncbi_vs_ucsc,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+52,hg19,ensembl,missing_vcf_lengths,False,False,hg19,hg19,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+53,hg19,ensembl,missing_vcf_lengths,False,False,hg19,hg19,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+54,hg19,ensembl,missing_vcf_lengths,False,False,hg19,hg19,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+55,hg19,ensembl,mt_flavor_swap,True,False,hg19,hg19,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16569 (rCRS) with an hg19 nuclear build — common but inconsistent"
+56,hg19,ensembl,mt_flavor_swap,True,False,hg19,hg19,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16569 (rCRS) with an hg19 nuclear build — common but inconsistent"
+57,hg19,ensembl,mt_flavor_swap,True,False,hg19,hg19,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16569 (rCRS) with an hg19 nuclear build — common but inconsistent"
+58,hg19,ensembl,coord_oob,True,False,hg19,hg19,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg19 contig length; vcf: 1 coordinate(s) exceed hg19 contig length
+59,hg19,ensembl,coord_oob,True,False,hg19,hg19,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg19 contig length; vcf: 1 coordinate(s) exceed hg19 contig length
+60,hg19,ensembl,coord_oob,True,False,hg19,hg19,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg19 contig length; vcf: 1 coordinate(s) exceed hg19 contig length
+61,hg19,ensembl,alt_in_fasta_only,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+62,hg19,ensembl,alt_in_fasta_only,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+63,hg19,ensembl,alt_in_fasta_only,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+64,hg38,ensembl,header_lie,False,False,hg38,hg38,ok,,1,1,0,
+65,hg38,ensembl,header_lie,False,False,hg38,hg38,ok,,1,1,0,
+66,hg38,ensembl,header_lie,False,False,hg38,hg38,ok,,1,1,0,
+67,hg19,ensembl,mixed_names_in_gtf,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+68,hg19,ensembl,mixed_names_in_gtf,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+69,hg19,ensembl,mixed_names_in_gtf,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+70,hg19,ensembl,shifted_gtf,True,False,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg19, vcf:hg19"
+71,hg19,ensembl,shifted_gtf,True,False,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg19, vcf:hg19"
+72,hg19,ensembl,shifted_gtf,True,False,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg19, vcf:hg19"
+73,hg19,ncbi,clean,False,True,hg19,hg19,ok,,1,1,0,
+74,hg19,ncbi,clean,False,True,hg19,hg19,ok,,1,1,0,
+75,hg19,ncbi,clean,False,True,hg19,hg19,ok,,1,1,0,
+76,hg19,ncbi,wrong_build_gtf,True,True,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg38, fasta:hg19, vcf:hg19"
+77,hg19,ncbi,wrong_build_gtf,True,True,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg38, fasta:hg19, vcf:hg19"
+78,hg19,ncbi,wrong_build_gtf,True,True,hg19,hg19,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg38, fasta:hg19, vcf:hg19"
+79,hg19,ncbi,wrong_build_vcf,True,True,hg19,hg19,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg19, fasta:hg19, vcf:t2t; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+80,hg19,ncbi,wrong_build_vcf,True,True,hg19,hg19,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg19, fasta:hg19, vcf:t2t; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+81,hg19,ncbi,wrong_build_vcf,True,True,hg19,hg19,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg19, fasta:hg19, vcf:t2t; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+82,hg19,ncbi,naming_mismatch,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ncbi"
+83,hg19,ncbi,naming_mismatch,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ncbi"
+84,hg19,ncbi,naming_mismatch,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ncbi"
+85,hg19,ncbi,ncbi_vs_ucsc,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+86,hg19,ncbi,ncbi_vs_ucsc,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+87,hg19,ncbi,ncbi_vs_ucsc,True,True,hg19,hg19,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+88,hg19,ncbi,missing_vcf_lengths,False,False,hg19,hg19,warning,FILE_WARNING,1,1,1,vcf: VCF has no ##contig length lines; build call is weaker
+89,hg19,ncbi,missing_vcf_lengths,False,False,hg19,hg19,warning,FILE_WARNING,1,1,1,vcf: VCF has no ##contig length lines; build call is weaker
+90,hg19,ncbi,missing_vcf_lengths,False,False,hg19,hg19,warning,FILE_WARNING,1,1,1,vcf: VCF has no ##contig length lines; build call is weaker
+91,hg19,ncbi,mt_flavor_swap,True,False,hg19,hg19,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16569 (rCRS) with an hg19 nuclear build — common but inconsistent"
+92,hg19,ncbi,mt_flavor_swap,True,False,hg19,hg19,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16569 (rCRS) with an hg19 nuclear build — common but inconsistent"
+93,hg19,ncbi,mt_flavor_swap,True,False,hg19,hg19,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16569 (rCRS) with an hg19 nuclear build — common but inconsistent"
+94,hg19,ncbi,coord_oob,True,False,hg19,hg19,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg19 contig length; vcf: 1 coordinate(s) exceed hg19 contig length
+95,hg19,ncbi,coord_oob,True,False,hg19,hg19,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg19 contig length; vcf: 1 coordinate(s) exceed hg19 contig length
+96,hg19,ncbi,coord_oob,True,False,hg19,hg19,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg19 contig length; vcf: 1 coordinate(s) exceed hg19 contig length
+97,hg19,ncbi,alt_in_fasta_only,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+98,hg19,ncbi,alt_in_fasta_only,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+99,hg19,ncbi,alt_in_fasta_only,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+100,hg38,ncbi,header_lie,False,False,hg38,hg38,ok,,1,1,0,
+101,hg38,ncbi,header_lie,False,False,hg38,hg38,ok,,1,1,0,
+102,hg38,ncbi,header_lie,False,False,hg38,hg38,ok,,1,1,0,
+103,hg19,ncbi,mixed_names_in_gtf,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+104,hg19,ncbi,mixed_names_in_gtf,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+105,hg19,ncbi,mixed_names_in_gtf,True,False,hg19,hg19,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+106,hg19,ncbi,shifted_gtf,True,False,hg19,hg19,ok,,0,1,0,
+107,hg19,ncbi,shifted_gtf,True,False,hg19,hg19,ok,,0,1,0,
+108,hg19,ncbi,shifted_gtf,True,False,hg19,hg19,ok,,0,1,0,
+109,hg38,ucsc,clean,False,True,hg38,hg38,ok,,1,1,0,
+110,hg38,ucsc,clean,False,True,hg38,hg38,ok,,1,1,0,
+111,hg38,ucsc,clean,False,True,hg38,hg38,ok,,1,1,0,
+112,hg38,ucsc,wrong_build_gtf,True,True,hg38,hg38,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg38, vcf:hg38"
+113,hg38,ucsc,wrong_build_gtf,True,True,hg38,hg38,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg38, vcf:hg38"
+114,hg38,ucsc,wrong_build_gtf,True,True,hg38,hg38,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg38, vcf:hg38"
+115,hg38,ucsc,wrong_build_vcf,True,True,hg38,hg38,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg38, fasta:hg38, vcf:hg19; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+116,hg38,ucsc,wrong_build_vcf,True,True,hg38,hg38,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg38, fasta:hg38, vcf:hg19; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+117,hg38,ucsc,wrong_build_vcf,True,True,hg38,hg38,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg38, fasta:hg38, vcf:hg19; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+118,hg38,ucsc,naming_mismatch,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ensembl, fasta:ucsc, vcf:ucsc"
+119,hg38,ucsc,naming_mismatch,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ensembl, fasta:ucsc, vcf:ucsc"
+120,hg38,ucsc,naming_mismatch,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ensembl, fasta:ucsc, vcf:ucsc"
+121,hg38,ucsc,ncbi_vs_ucsc,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+122,hg38,ucsc,ncbi_vs_ucsc,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+123,hg38,ucsc,ncbi_vs_ucsc,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+124,hg38,ucsc,missing_vcf_lengths,False,False,hg38,hg38,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+125,hg38,ucsc,missing_vcf_lengths,False,False,hg38,hg38,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+126,hg38,ucsc,missing_vcf_lengths,False,False,hg38,hg38,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+127,hg38,ucsc,mt_flavor_swap,True,False,hg38,hg38,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+128,hg38,ucsc,mt_flavor_swap,True,False,hg38,hg38,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+129,hg38,ucsc,mt_flavor_swap,True,False,hg38,hg38,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+130,hg38,ucsc,coord_oob,True,False,hg38,hg38,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg38 contig length; vcf: 1 coordinate(s) exceed hg38 contig length
+131,hg38,ucsc,coord_oob,True,False,hg38,hg38,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg38 contig length; vcf: 1 coordinate(s) exceed hg38 contig length
+132,hg38,ucsc,coord_oob,True,False,hg38,hg38,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg38 contig length; vcf: 1 coordinate(s) exceed hg38 contig length
+133,hg38,ucsc,alt_in_fasta_only,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+134,hg38,ucsc,alt_in_fasta_only,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+135,hg38,ucsc,alt_in_fasta_only,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+136,t2t,ucsc,header_lie,False,False,t2t,t2t,ok,,1,1,0,
+137,t2t,ucsc,header_lie,False,False,t2t,t2t,ok,,1,1,0,
+138,t2t,ucsc,header_lie,False,False,t2t,t2t,ok,,1,1,0,
+139,hg38,ucsc,mixed_names_in_gtf,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+140,hg38,ucsc,mixed_names_in_gtf,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+141,hg38,ucsc,mixed_names_in_gtf,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+142,hg38,ucsc,shifted_gtf,True,False,hg38,hg38,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+143,hg38,ucsc,shifted_gtf,True,False,hg38,hg38,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+144,hg38,ucsc,shifted_gtf,True,False,hg38,hg38,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+145,hg38,ensembl,clean,False,True,hg38,hg38,ok,,1,1,0,
+146,hg38,ensembl,clean,False,True,hg38,hg38,ok,,1,1,0,
+147,hg38,ensembl,clean,False,True,hg38,hg38,ok,,1,1,0,
+148,hg38,ensembl,wrong_build_gtf,True,True,hg38,hg38,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg38, vcf:hg38"
+149,hg38,ensembl,wrong_build_gtf,True,True,hg38,hg38,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg38, vcf:hg38"
+150,hg38,ensembl,wrong_build_gtf,True,True,hg38,hg38,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg38, vcf:hg38"
+151,hg38,ensembl,wrong_build_vcf,True,True,hg38,hg38,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg38, fasta:hg38, vcf:hg19; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+152,hg38,ensembl,wrong_build_vcf,True,True,hg38,hg38,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg38, fasta:hg38, vcf:hg19; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+153,hg38,ensembl,wrong_build_vcf,True,True,hg38,hg38,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg38, fasta:hg38, vcf:hg19; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+154,hg38,ensembl,naming_mismatch,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ensembl, vcf:ensembl"
+155,hg38,ensembl,naming_mismatch,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ensembl, vcf:ensembl"
+156,hg38,ensembl,naming_mismatch,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ensembl, vcf:ensembl"
+157,hg38,ensembl,ncbi_vs_ucsc,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+158,hg38,ensembl,ncbi_vs_ucsc,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+159,hg38,ensembl,ncbi_vs_ucsc,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+160,hg38,ensembl,missing_vcf_lengths,False,False,hg38,hg38,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+161,hg38,ensembl,missing_vcf_lengths,False,False,hg38,hg38,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+162,hg38,ensembl,missing_vcf_lengths,False,False,hg38,hg38,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+163,hg38,ensembl,mt_flavor_swap,True,False,hg38,hg38,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+164,hg38,ensembl,mt_flavor_swap,True,False,hg38,hg38,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+165,hg38,ensembl,mt_flavor_swap,True,False,hg38,hg38,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+166,hg38,ensembl,coord_oob,True,False,hg38,hg38,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg38 contig length; vcf: 1 coordinate(s) exceed hg38 contig length
+167,hg38,ensembl,coord_oob,True,False,hg38,hg38,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg38 contig length; vcf: 1 coordinate(s) exceed hg38 contig length
+168,hg38,ensembl,coord_oob,True,False,hg38,hg38,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg38 contig length; vcf: 1 coordinate(s) exceed hg38 contig length
+169,hg38,ensembl,alt_in_fasta_only,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+170,hg38,ensembl,alt_in_fasta_only,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+171,hg38,ensembl,alt_in_fasta_only,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+172,t2t,ensembl,header_lie,False,False,t2t,t2t,ok,,1,1,0,
+173,t2t,ensembl,header_lie,False,False,t2t,t2t,ok,,1,1,0,
+174,t2t,ensembl,header_lie,False,False,t2t,t2t,ok,,1,1,0,
+175,hg38,ensembl,mixed_names_in_gtf,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+176,hg38,ensembl,mixed_names_in_gtf,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+177,hg38,ensembl,mixed_names_in_gtf,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+178,hg38,ensembl,shifted_gtf,True,False,hg38,hg38,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+179,hg38,ensembl,shifted_gtf,True,False,hg38,hg38,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+180,hg38,ensembl,shifted_gtf,True,False,hg38,hg38,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+181,hg38,ncbi,clean,False,True,hg38,hg38,ok,,1,1,0,
+182,hg38,ncbi,clean,False,True,hg38,hg38,ok,,1,1,0,
+183,hg38,ncbi,clean,False,True,hg38,hg38,ok,,1,1,0,
+184,hg38,ncbi,wrong_build_gtf,True,True,hg38,hg38,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg38, vcf:hg38"
+185,hg38,ncbi,wrong_build_gtf,True,True,hg38,hg38,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg38, vcf:hg38"
+186,hg38,ncbi,wrong_build_gtf,True,True,hg38,hg38,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:hg38, vcf:hg38"
+187,hg38,ncbi,wrong_build_vcf,True,True,hg38,hg38,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg38, fasta:hg38, vcf:hg19; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+188,hg38,ncbi,wrong_build_vcf,True,True,hg38,hg38,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg38, fasta:hg38, vcf:hg19; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+189,hg38,ncbi,wrong_build_vcf,True,True,hg38,hg38,error,BUILD_MISMATCH|MT_FLAVOR_MISMATCH,1,1,2,"files vote for different assemblies: gtf:hg38, fasta:hg38, vcf:hg19; mitochondrial length flavors mixed: {'rcrs', 'yoruba'}"
+190,hg38,ncbi,naming_mismatch,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ncbi"
+191,hg38,ncbi,naming_mismatch,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ncbi"
+192,hg38,ncbi,naming_mismatch,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ncbi"
+193,hg38,ncbi,ncbi_vs_ucsc,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+194,hg38,ncbi,ncbi_vs_ucsc,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+195,hg38,ncbi,ncbi_vs_ucsc,True,True,hg38,hg38,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+196,hg38,ncbi,missing_vcf_lengths,False,False,hg38,hg38,warning,FILE_WARNING,1,1,1,vcf: VCF has no ##contig length lines; build call is weaker
+197,hg38,ncbi,missing_vcf_lengths,False,False,hg38,hg38,warning,FILE_WARNING,1,1,1,vcf: VCF has no ##contig length lines; build call is weaker
+198,hg38,ncbi,missing_vcf_lengths,False,False,hg38,hg38,warning,FILE_WARNING,1,1,1,vcf: VCF has no ##contig length lines; build call is weaker
+199,hg38,ncbi,mt_flavor_swap,True,False,hg38,hg38,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+200,hg38,ncbi,mt_flavor_swap,True,False,hg38,hg38,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+201,hg38,ncbi,mt_flavor_swap,True,False,hg38,hg38,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+202,hg38,ncbi,coord_oob,True,False,hg38,hg38,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg38 contig length; vcf: 1 coordinate(s) exceed hg38 contig length
+203,hg38,ncbi,coord_oob,True,False,hg38,hg38,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg38 contig length; vcf: 1 coordinate(s) exceed hg38 contig length
+204,hg38,ncbi,coord_oob,True,False,hg38,hg38,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed hg38 contig length; vcf: 1 coordinate(s) exceed hg38 contig length
+205,hg38,ncbi,alt_in_fasta_only,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+206,hg38,ncbi,alt_in_fasta_only,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+207,hg38,ncbi,alt_in_fasta_only,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+208,t2t,ncbi,header_lie,False,False,t2t,t2t,ok,,1,1,0,
+209,t2t,ncbi,header_lie,False,False,t2t,t2t,ok,,1,1,0,
+210,t2t,ncbi,header_lie,False,False,t2t,t2t,ok,,1,1,0,
+211,hg38,ncbi,mixed_names_in_gtf,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+212,hg38,ncbi,mixed_names_in_gtf,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+213,hg38,ncbi,mixed_names_in_gtf,True,False,hg38,hg38,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+214,hg38,ncbi,shifted_gtf,True,False,hg38,hg38,ok,,0,1,0,
+215,hg38,ncbi,shifted_gtf,True,False,hg38,hg38,ok,,0,1,0,
+216,hg38,ncbi,shifted_gtf,True,False,hg38,hg38,ok,,0,1,0,
+217,t2t,ucsc,clean,False,True,t2t,t2t,ok,,1,1,0,
+218,t2t,ucsc,clean,False,True,t2t,t2t,ok,,1,1,0,
+219,t2t,ucsc,clean,False,True,t2t,t2t,ok,,1,1,0,
+220,t2t,ucsc,wrong_build_gtf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg19, fasta:t2t, vcf:t2t"
+221,t2t,ucsc,wrong_build_gtf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg19, fasta:t2t, vcf:t2t"
+222,t2t,ucsc,wrong_build_gtf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg19, fasta:t2t, vcf:t2t"
+223,t2t,ucsc,wrong_build_vcf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:t2t, vcf:hg38"
+224,t2t,ucsc,wrong_build_vcf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:t2t, vcf:hg38"
+225,t2t,ucsc,wrong_build_vcf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:t2t, vcf:hg38"
+226,t2t,ucsc,naming_mismatch,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ensembl, fasta:ucsc, vcf:ucsc"
+227,t2t,ucsc,naming_mismatch,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ensembl, fasta:ucsc, vcf:ucsc"
+228,t2t,ucsc,naming_mismatch,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ensembl, fasta:ucsc, vcf:ucsc"
+229,t2t,ucsc,ncbi_vs_ucsc,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+230,t2t,ucsc,ncbi_vs_ucsc,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+231,t2t,ucsc,ncbi_vs_ucsc,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+232,t2t,ucsc,missing_vcf_lengths,False,False,t2t,t2t,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+233,t2t,ucsc,missing_vcf_lengths,False,False,t2t,t2t,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+234,t2t,ucsc,missing_vcf_lengths,False,False,t2t,t2t,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+235,t2t,ucsc,mt_flavor_swap,True,False,t2t,t2t,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+236,t2t,ucsc,mt_flavor_swap,True,False,t2t,t2t,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+237,t2t,ucsc,mt_flavor_swap,True,False,t2t,t2t,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+238,t2t,ucsc,coord_oob,True,False,t2t,t2t,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed t2t contig length; vcf: 1 coordinate(s) exceed t2t contig length
+239,t2t,ucsc,coord_oob,True,False,t2t,t2t,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed t2t contig length; vcf: 1 coordinate(s) exceed t2t contig length
+240,t2t,ucsc,coord_oob,True,False,t2t,t2t,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed t2t contig length; vcf: 1 coordinate(s) exceed t2t contig length
+241,t2t,ucsc,alt_in_fasta_only,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+242,t2t,ucsc,alt_in_fasta_only,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+243,t2t,ucsc,alt_in_fasta_only,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+244,hg19,ucsc,header_lie,False,False,hg19,hg19,ok,,1,1,0,
+245,hg19,ucsc,header_lie,False,False,hg19,hg19,ok,,1,1,0,
+246,hg19,ucsc,header_lie,False,False,hg19,hg19,ok,,1,1,0,
+247,t2t,ucsc,mixed_names_in_gtf,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+248,t2t,ucsc,mixed_names_in_gtf,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+249,t2t,ucsc,mixed_names_in_gtf,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+250,t2t,ucsc,shifted_gtf,True,False,t2t,t2t,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+251,t2t,ucsc,shifted_gtf,True,False,t2t,t2t,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+252,t2t,ucsc,shifted_gtf,True,False,t2t,t2t,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+253,t2t,ensembl,clean,False,True,t2t,t2t,ok,,1,1,0,
+254,t2t,ensembl,clean,False,True,t2t,t2t,ok,,1,1,0,
+255,t2t,ensembl,clean,False,True,t2t,t2t,ok,,1,1,0,
+256,t2t,ensembl,wrong_build_gtf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg19, fasta:t2t, vcf:t2t"
+257,t2t,ensembl,wrong_build_gtf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg19, fasta:t2t, vcf:t2t"
+258,t2t,ensembl,wrong_build_gtf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg19, fasta:t2t, vcf:t2t"
+259,t2t,ensembl,wrong_build_vcf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:t2t, vcf:hg38"
+260,t2t,ensembl,wrong_build_vcf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:t2t, vcf:hg38"
+261,t2t,ensembl,wrong_build_vcf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:t2t, vcf:hg38"
+262,t2t,ensembl,naming_mismatch,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ensembl, vcf:ensembl"
+263,t2t,ensembl,naming_mismatch,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ensembl, vcf:ensembl"
+264,t2t,ensembl,naming_mismatch,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ensembl, vcf:ensembl"
+265,t2t,ensembl,ncbi_vs_ucsc,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+266,t2t,ensembl,ncbi_vs_ucsc,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+267,t2t,ensembl,ncbi_vs_ucsc,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+268,t2t,ensembl,missing_vcf_lengths,False,False,t2t,t2t,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+269,t2t,ensembl,missing_vcf_lengths,False,False,t2t,t2t,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+270,t2t,ensembl,missing_vcf_lengths,False,False,t2t,t2t,warning,BUILD_UNKNOWN|FILE_WARNING,1,1,2,at least one file could not be assigned a build; vcf: VCF has no ##contig length lines; build call is weaker
+271,t2t,ensembl,mt_flavor_swap,True,False,t2t,t2t,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+272,t2t,ensembl,mt_flavor_swap,True,False,t2t,t2t,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+273,t2t,ensembl,mt_flavor_swap,True,False,t2t,t2t,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+274,t2t,ensembl,coord_oob,True,False,t2t,t2t,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed t2t contig length; vcf: 1 coordinate(s) exceed t2t contig length
+275,t2t,ensembl,coord_oob,True,False,t2t,t2t,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed t2t contig length; vcf: 1 coordinate(s) exceed t2t contig length
+276,t2t,ensembl,coord_oob,True,False,t2t,t2t,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed t2t contig length; vcf: 1 coordinate(s) exceed t2t contig length
+277,t2t,ensembl,alt_in_fasta_only,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+278,t2t,ensembl,alt_in_fasta_only,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+279,t2t,ensembl,alt_in_fasta_only,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+280,hg19,ensembl,header_lie,False,False,hg19,hg19,ok,,1,1,0,
+281,hg19,ensembl,header_lie,False,False,hg19,hg19,ok,,1,1,0,
+282,hg19,ensembl,header_lie,False,False,hg19,hg19,ok,,1,1,0,
+283,t2t,ensembl,mixed_names_in_gtf,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+284,t2t,ensembl,mixed_names_in_gtf,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+285,t2t,ensembl,mixed_names_in_gtf,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+286,t2t,ensembl,shifted_gtf,True,False,t2t,t2t,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+287,t2t,ensembl,shifted_gtf,True,False,t2t,t2t,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+288,t2t,ensembl,shifted_gtf,True,False,t2t,t2t,warning,BUILD_UNKNOWN,1,1,1,at least one file could not be assigned a build
+289,t2t,ncbi,clean,False,True,t2t,t2t,ok,,1,1,0,
+290,t2t,ncbi,clean,False,True,t2t,t2t,ok,,1,1,0,
+291,t2t,ncbi,clean,False,True,t2t,t2t,ok,,1,1,0,
+292,t2t,ncbi,wrong_build_gtf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg19, fasta:t2t, vcf:t2t"
+293,t2t,ncbi,wrong_build_gtf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg19, fasta:t2t, vcf:t2t"
+294,t2t,ncbi,wrong_build_gtf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:hg19, fasta:t2t, vcf:t2t"
+295,t2t,ncbi,wrong_build_vcf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:t2t, vcf:hg38"
+296,t2t,ncbi,wrong_build_vcf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:t2t, vcf:hg38"
+297,t2t,ncbi,wrong_build_vcf,True,True,t2t,t2t,error,BUILD_MISMATCH,1,1,1,"files vote for different assemblies: gtf:t2t, fasta:t2t, vcf:hg38"
+298,t2t,ncbi,naming_mismatch,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ncbi"
+299,t2t,ncbi,naming_mismatch,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ncbi"
+300,t2t,ncbi,naming_mismatch,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ncbi"
+301,t2t,ncbi,ncbi_vs_ucsc,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+302,t2t,ncbi,ncbi_vs_ucsc,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+303,t2t,ncbi,ncbi_vs_ucsc,True,True,t2t,t2t,error,NAMING_MISMATCH,1,1,1,"contig naming styles differ across files: gtf:ucsc, fasta:ncbi, vcf:ensembl"
+304,t2t,ncbi,missing_vcf_lengths,False,False,t2t,t2t,warning,FILE_WARNING,1,1,1,vcf: VCF has no ##contig length lines; build call is weaker
+305,t2t,ncbi,missing_vcf_lengths,False,False,t2t,t2t,warning,FILE_WARNING,1,1,1,vcf: VCF has no ##contig length lines; build call is weaker
+306,t2t,ncbi,missing_vcf_lengths,False,False,t2t,t2t,warning,FILE_WARNING,1,1,1,vcf: VCF has no ##contig length lines; build call is weaker
+307,t2t,ncbi,mt_flavor_swap,True,False,t2t,t2t,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+308,t2t,ncbi,mt_flavor_swap,True,False,t2t,t2t,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+309,t2t,ncbi,mt_flavor_swap,True,False,t2t,t2t,warning,FILE_WARNING|MT_FLAVOR_MISMATCH,1,1,2,"mitochondrial length flavors mixed: {'rcrs', 'yoruba'}; vcf: chrM length 16571 (NC_001807) with a GRCh38/T2T nuclear build"
+310,t2t,ncbi,coord_oob,True,False,t2t,t2t,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed t2t contig length; vcf: 1 coordinate(s) exceed t2t contig length
+311,t2t,ncbi,coord_oob,True,False,t2t,t2t,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed t2t contig length; vcf: 1 coordinate(s) exceed t2t contig length
+312,t2t,ncbi,coord_oob,True,False,t2t,t2t,warning,FILE_WARNING,1,1,2,gtf: 1 coordinate(s) exceed t2t contig length; vcf: 1 coordinate(s) exceed t2t contig length
+313,t2t,ncbi,alt_in_fasta_only,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+314,t2t,ncbi,alt_in_fasta_only,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+315,t2t,ncbi,alt_in_fasta_only,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,fasta: 2 alt/decoy/unplaced contig name(s)
+316,hg19,ncbi,header_lie,False,False,hg19,hg19,ok,,1,1,0,
+317,hg19,ncbi,header_lie,False,False,hg19,hg19,ok,,1,1,0,
+318,hg19,ncbi,header_lie,False,False,hg19,hg19,ok,,1,1,0,
+319,t2t,ncbi,mixed_names_in_gtf,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+320,t2t,ncbi,mixed_names_in_gtf,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+321,t2t,ncbi,mixed_names_in_gtf,True,False,t2t,t2t,warning,FILE_WARNING,1,1,1,gtf: mixed contig naming styles in one file
+322,t2t,ncbi,shifted_gtf,True,False,t2t,t2t,ok,,0,1,0,
+323,t2t,ncbi,shifted_gtf,True,False,t2t,t2t,ok,,0,1,0,
+324,t2t,ncbi,shifted_gtf,True,False,t2t,t2t,ok,,0,1,0,

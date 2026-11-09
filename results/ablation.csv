@@ -1,0 +1,8 @@
+evidence_removed,precision,recall,fasta_build_acc
+none (full score),1.00,1.00,1.00
+header token,1.00,1.00,1.00
+accessions,1.00,1.00,1.00
+landmark genes,1.00,0.83,1.00
+contig lengths,1.00,0.67,0.39
+lengths + accessions,1.00,0.50,0.00
+lengths + accessions + landmarks,1.00,0.50,0.00

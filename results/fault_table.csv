@@ -1,0 +1,13 @@
+fault,n,detection_rate,fasta_build_acc,frac_error,frac_warning
+clean,27,1.0,1.0,0.0,0.0
+wrong_build_gtf,27,1.0,1.0,1.0,0.0
+wrong_build_vcf,27,1.0,1.0,1.0,0.0
+naming_mismatch,27,1.0,1.0,1.0,0.0
+ncbi_vs_ucsc,27,1.0,1.0,1.0,0.0
+missing_vcf_lengths,27,1.0,1.0,0.0,1.0
+mt_flavor_swap,27,1.0,1.0,0.0,1.0
+coord_oob,27,1.0,1.0,0.0,1.0
+alt_in_fasta_only,27,1.0,1.0,0.0,1.0
+header_lie,27,1.0,1.0,0.0,0.0
+mixed_names_in_gtf,27,1.0,1.0,0.0,1.0
+shifted_gtf,27,0.667,1.0,0.222,0.444

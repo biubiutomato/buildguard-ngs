@@ -1,0 +1,12 @@
+##description: evidence-based annotation of the human genome (GRCh37), version 19 (Ensembl 74)
+##provider: GENCODE
+##contact: gencode@sanger.ac.uk
+##format: gtf
+##date: 2013-12-05
+chr7	HAVANA	gene	55086714	55324313	.	+	.	gene_id "ENSG00000146648.11"; transcript_id "ENSG00000146648.11"; gene_type "protein_coding"; gene_status "KNOWN"; gene_name "EGFR"; transcript_type "protein_coding"; transcript_status "KNOWN"; transcript_name "EGFR"; level 1; havana_gene "OTTHUMG00000023661.3";
+chr8	HAVANA	gene	128747680	128753674	.	+	.	gene_id "ENSG00000136997.10"; transcript_id "ENSG00000136997.10"; gene_type "protein_coding"; gene_status "KNOWN"; gene_name "MYC"; transcript_type "protein_coding"; transcript_status "KNOWN"; transcript_name "MYC"; level 1; havana_gene "OTTHUMG00000128475.3";
+chr10	HAVANA	gene	89622870	89731687	.	+	.	gene_id "ENSG00000171862.5"; transcript_id "ENSG00000171862.5"; gene_type "protein_coding"; gene_status "KNOWN"; gene_name "PTEN"; transcript_type "protein_coding"; transcript_status "KNOWN"; transcript_name "PTEN"; level 2; havana_gene "OTTHUMG00000018688.1";
+chr12	HAVANA	gene	25357723	25403870	.	-	.	gene_id "ENSG00000133703.7"; transcript_id "ENSG00000133703.7"; gene_type "protein_coding"; gene_status "KNOWN"; gene_name "KRAS"; transcript_type "protein_coding"; transcript_status "KNOWN"; transcript_name "KRAS"; level 2; havana_gene "OTTHUMG00000171193.1";
+chr13	HAVANA	gene	32889611	32973805	.	+	.	gene_id "ENSG00000139618.10"; transcript_id "ENSG00000139618.10"; gene_type "protein_coding"; gene_status "KNOWN"; gene_name "BRCA2"; transcript_type "protein_coding"; transcript_status "KNOWN"; transcript_name "BRCA2"; level 2; havana_gene "OTTHUMG00000017411.4";
+chr17	HAVANA	gene	7565097	7590856	.	-	.	gene_id "ENSG00000141510.11"; transcript_id "ENSG00000141510.11"; gene_type "protein_coding"; gene_status "KNOWN"; gene_name "TP53"; transcript_type "protein_coding"; transcript_status "KNOWN"; transcript_name "TP53"; level 2; havana_gene "OTTHUMG00000162125.4";
+chr17	HAVANA	gene	41196312	41277500	.	-	.	gene_id "ENSG00000012048.15"; transcript_id "ENSG00000012048.15"; gene_type "protein_coding"; gene_status "KNOWN"; gene_name "BRCA1"; transcript_type "protein_coding"; transcript_status "KNOWN"; transcript_name "BRCA1"; level 2; havana_gene "OTTHUMG00000157426.5";
